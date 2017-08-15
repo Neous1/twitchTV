@@ -1,26 +1,8 @@
-// got to twitchtv
 
-// get users
-
-// get profile via a search api (later)
-
-// call api per user 
-
-var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"]
-
-// var streams api
-
-// https://wind-bow.glitch.me/twitch-api/streams/user
-
-//var users api
-
-// https://wind-bow.glitch.me/twitch-api/users/ESL_SC2
-
-// Determine the status
-
+var users = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "adam4813", "ThijsHS", "imaqtpie"]
 
 //function is used to pull data (api call)
-function getData(type, user) {
+function getData(type, user) {  
     var url = "https://wind-bow.glitch.me/twitch-api/" + type + "/" + user;
 
     return $.getJSON(url)
@@ -35,6 +17,22 @@ users.forEach(function (user) {
 });
 
 function displayData(userData, streamsData){
-    console.log(userData);
-    console.log(streamsData);
+        console.log(userData);
+  for (var i = 0; i<users[i].length; i++){
+    // console.log(userData.stream);
+    // console.log(userData.name);
+
+    // console.log(userData.display_name);
+    // console.log(streamsData);
+    // $("#loc").html(loc)
+
+
+    var name = userData.name
+    var bio = userData.bio
+
+
+    // $("#name").html(name)
+  }
+    $("#players").append("<li>"+"+'Name:"+name+""+bio+""+"</li>")
+//+"+_+"+
 }
