@@ -34,6 +34,10 @@ function displayData(userData, streamsData) {
 
         // $("#name").html(name)
     }
-    $("#players").append("<li>" + ""+"<img src='"+logo+"' alt='"+ name + "'>"+"  " +"<strong>Name :" +" "+ name + "</strong>" + "<br>" + bio + "<br>" + "</li>")
-    //+"+_+"+
+    $("#players").append("<li>" + ""+"<img class='logo' src='" +logo+"' alt='"+ name + "'>"+"  " +"<strong>Name :" +" "+ name + "</strong>" + "<br>" + bio + "<br>" + "</li>")
+    // //+"+_+"+
+
+        // $("#players").append("<li>" + "<span id='+logo+'></span>" + "</li>")
+ 
+    
 }
